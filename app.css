@@ -1,6 +1,7 @@
 html,
 body {
     width: 100%;
+    height: 100%;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -13,10 +14,16 @@ section {
 If you add a padding to the parent element of the h1, the margin will be inside the parent */
 }
 
+#main-nav-position {
+    position: relative;
+}
+
 nav {
-    background: #4ABDAC;
     display: table;
     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
 
 #brand {
@@ -137,9 +144,12 @@ li:hover {
 }
 
 #main-img {
-    background-image: image-url('./home-page.jpg');
+    background-image: url('./loc-banner.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
+    /* full height */
     height: 100%
 }
 

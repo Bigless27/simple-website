@@ -1,0 +1,8 @@
+.rocket-container {
+    transform: rotate(-43deg);
+}
+
+.rocket {
+    color: white;
+    font-size: 24px;
+}

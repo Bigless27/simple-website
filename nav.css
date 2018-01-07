@@ -63,23 +63,6 @@ h1 {
 
 /* > is the child combinator selects top level + all child divs */
 
-
-/* .outer-menu .checkbox-toggle:checked+.hamburger>div {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-
-.outer-menu .checkbox-toggle:checked+.hamburger>div:before,
-.outer-menu .checkbox-toggle:checked+.hamburger>div:after {
-    top: 0;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-.outer-menu .checkbox-toggle:checked+.hamburger>div:after {
-    opacity: 0;
-} */
-
 .outer-menu .checkbox-toggle:checked~.menu {
     pointer-events: auto;
     visibility: visible;
@@ -103,17 +86,6 @@ h1 {
     -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-/* .outer-menu .checkbox-toggle:checked:hover+.hamburger>div {
-    -webkit-transform: rotate(225deg);
-    transform: rotate(225deg);
-}
-
-.outer-menu .home:checked:hover+.hamburger>div {
-    -webkit-transform: rotate(225deg);
-    transform: rotate(225deg);
-} */
 
 .outer-menu .hamburger {
     position: absolute;
@@ -142,48 +114,6 @@ h1 {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-
-/* .outer-menu .hamburger>div {
-    position: relative;
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #FEFEFE;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-} */
-
-
-/* .outer-menu .hamburger>div:before,
-.outer-menu .hamburger>div:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-} */
-
-
-/* .outer-menu .hamburger>div:after {
-    top: 10px;
-} */
 
 .outer-menu .menu {
     position: fixed;
@@ -244,18 +174,6 @@ h1 {
     -webkit-transition: opacity 0.4s ease;
     transition: opacity 0.4s ease;
     overflow-y: auto;
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .outer-menu .menu>div>div>ul {
@@ -288,20 +206,6 @@ h1 {
 .outer-menu .menu>div>div>ul>li>a:hover:after {
     width: 100%;
 }
-
-
-/* .outer-menu .menu>div>div>ul>li>a:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: -0.15em;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #e5e5e5;
-    -webkit-transition: width 0.4s ease;
-    transition: width 0.4s ease;
-} */
 
 
 /* accordian */

@@ -11,9 +11,7 @@
     <link rel="shortcut icon" type="image/png" href="./loc-fav.png">
 
     <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <!-- bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/82cabb6e74.js"></script>
 </head>
 
 <body class="container">
@@ -22,7 +20,7 @@
         <input class="checkbox-toggle" type="checkbox" />
         <div class="hamburger">
             <div class="rocket-container">
-                <i class="fas fa-rocket rocket"></i>
+                <i class="fa fa-rocket"></i>
             </div>
             <div></div>
         </div>
@@ -33,12 +31,16 @@
                         <h1 class="header-ani">Lesson on Coding</h1>
                     </div>
                     <button class="accordion">About</button>
-                    <div class="panel">
+                    <div class="panel about">
+                        <div class="profile-pic-container">
+                            <div class="profile-pic"></div>
+                        </div>
                         <p>Welcome to Lesson on Coding! My name is Ryan Lesson. A 24 year old developer how's been a software dawg for a min.</p>
                     </div>
                     <button class="accordion">Content</button>
                     <div class="panel">
                         <p>Github Account: Bigless27</p>
+                        <i class="fa fa-github" aria-hidden="true"></i>
                     </div>
                     <button class="accordion">Youtube</button>
                     <div class="panel">
@@ -46,16 +48,18 @@
                     </div>
                     <button class="accordion">Contact</button>
                     <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class='social-icons'>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id='main-img'></div>
-    <h1>Innovation!</h1>
-    <footer></footer>
-
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
@@ -76,9 +80,13 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function animateHeart() {
-            $('.header-ani').animate({
-                fontSize: $('.header-ani').css('fontSize') == '60px' ? '55px' : '60px'
-            }, 500, animateHeart);
+
+            let x = '60px';
+            let y = '55px';
+
+            // $('.header-ani').animate({
+            //     fontSize: $('.header-ani').css('fontSize') == '50px' ? '45px' : '50px'
+            // }, 500, animateHeart);
         });
     </script>
 

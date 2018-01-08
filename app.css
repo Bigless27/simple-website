@@ -33,13 +33,6 @@ nav {
     font-size: 30px;
 }
 
-ul {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px;
-    float: right;
-}
-
 a:link,
 a:visited {
     color: #dfdce3;
@@ -161,18 +154,6 @@ footer {
     text-align: center;
 }
 
-#footer-content {
-    font-size: 20px;
-    border: 1px solid black;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#footer-content a {
-    font-size: 14px;
-    color: black;
-}
-
 #about {
     background-color: #dfdce3;
     width: 100%;
@@ -228,4 +209,24 @@ h2 {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.profile-pic-container {
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.profile-pic {
+    height: 300px;
+    width: 300px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: url("./loc-profile.jpeg") center no-repeat;
+    background-size: cover;
 }
